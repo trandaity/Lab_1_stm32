@@ -19,7 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "display7SEG.h"
+#include "traffic_light.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -92,7 +92,6 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  int counter = 0;
   while (1)
   {
 //	  HAL_GPIO_WritePin(RED_GPIO_Port, RED_Pin, GPIO_PIN_SET);
@@ -109,10 +108,7 @@ int main(void)
 //	  HAL_GPIO_WritePin(YELLOW_GPIO_Port, YELLOW_Pin, GPIO_PIN_SET);
 //	  HAL_GPIO_WritePin(GREEN_GPIO_Port, GREEN_Pin, GPIO_PIN_RESET);
 //	  HAL_Delay(2000);
-
-	  if(counter >= 10)
-		  counter = 0;
-	  display7SEG(counter++);
+	  trafficLightFSM();
 	  HAL_Delay(1000);
 
     /* USER CODE END WHILE */
