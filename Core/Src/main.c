@@ -91,9 +91,15 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  uint16_t allPins = 0x0010;
   while (1)
   {
 	  //TODO Ex6
+	  //Test LED connections
+	  if(allPins == 0x0000) allPins = 0x0010;
+	  GPIOA->ODR = allPins;
+	  allPins = allPins << 1;
+	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
