@@ -5,4 +5,7 @@
  *      Author: trand
  */
 
+#include "setNumberOnClock.h"
 
+void setNumberOnClock(int num){
+}
