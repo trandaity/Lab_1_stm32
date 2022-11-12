@@ -8,13 +8,8 @@
 #ifndef INC_GLOBAL_H_
 #define INC_GLOBAL_H_
 
-//extern uint16_t LEDsBuffer[12];
+extern uint16_t LEDsBuffer[12];
 extern int fiveMinInterval;
-//extern int oneHourInterval;
-extern uint16_t sec;
-extern uint16_t min;
-extern uint16_t hour;
-extern int countSec;
-extern uint16_t clockIndicator;
+extern int oneHourInterval;
 
 #endif /* INC_GLOBAL_H_ */

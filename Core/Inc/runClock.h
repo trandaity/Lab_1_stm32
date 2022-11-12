@@ -11,6 +11,6 @@
 #include "main.h"
 #include "global.h"
 
-void runClock(int num);
+void runClock();
 
 #endif /* INC_RUNCLOCK_H_ */
