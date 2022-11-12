@@ -9,8 +9,11 @@
 #define INC_RUNCLOCK_H_
 
 #include "main.h"
+#include "setNumberOnClock.h"
+#include "clearNumberOnClock.h"
+#include "clearAllClock.h"
 #include "global.h"
 
-void runClock(int hour, int min, int sec);
+void runClock();
 
 #endif /* INC_RUNCLOCK_H_ */

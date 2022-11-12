@@ -19,6 +19,11 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "setNumberOnClock.h"
+#include "clearAllClock.h"
+#include "clearNumberOnClock.h"
+#include "global.h"
+#include "runClock.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -93,6 +98,23 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  runClock();
+//	  sec++;
+//	  	if(sec >= 60){
+//	  		min++;
+//	  		sec = 0;
+//	  	}
+//
+//	  	if(min >= 60){
+//	  		hour++;
+//	  		min = 0;
+//	  	}
+//
+//	  	HAL_Delay(100);
+//	  	clearAllClock();
+//	  	setNumberOnClock(sec/5);
+//	  	setNumberOnClock(min/5);
+//	  	setNumberOnClock(hour);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

@@ -8,9 +8,6 @@
 #ifndef INC_GLOBAL_H_
 #define INC_GLOBAL_H_
 
-//extern uint16_t LEDsBuffer[12];
-extern int fiveMinInterval;
-extern int oneHourInterval;
 extern int sec;
 extern int min;
 extern int hour;
