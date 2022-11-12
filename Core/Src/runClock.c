@@ -6,3 +6,8 @@
  */
 
 #include "runClock.h"
+
+void runClock(int hour, int min, int sec)
+{
+
+}
